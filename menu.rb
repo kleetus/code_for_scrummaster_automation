@@ -25,6 +25,7 @@ class MenuHandler
 
     $stderr.puts
     $stderr.print "[#{default}]: "
+    ARGV.each {|d| ARGV.delete(d) }
     choice = gets
     $stderr.puts
 
